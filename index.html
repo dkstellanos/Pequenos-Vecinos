@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pequeños Vecinos</title>
+<link href="hoja.css" rel="stylesheet" type="text/css">
+	
+<link rel="icon" type="image/png" href= "img/logo_raton_rojo1.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+	
+<div id="contenedor">
+	
+	<div id="portada">
+		<video autoplay muted loop id="bg-video">
+		  <source src= "img/video_portada.mp4" type="video/mp4">
+		</video>
+		
+      <main id="Titulo">
+	      <div id="logo"></div>
+	      <h1>PEQUEÑOS VECINOS</h1>
+	      <h2>EN LA CIUDAD</h2>
+      </main>
+		
+      <header>
+		<nav>
+		  <ul>
+			  <li><a href="#" data-text="INICIO"><img src= "img/icono inicio.png"  alt="Inicio"></a></li>
+			  <li><a href="#Capitulos" data-text="CAPÍTULOS"><img src= "img/icono contenido.png" alt="Capítulos"></a></li>
+			  <li><a href="#" data-text="INFORMACIÓN"><img src= "img/icono informacion.png" alt="Información"></a></li>
+			</ul>
+        </nav>
+      </header>
+				
+		<section id="Personajes">
+			
+			<div class="grid">
+				<div class="cuadro tinto"><img src= "img/tinto.png" alt="Perro"></div>
+				<div class="cuadro vacio"></div>
+				<div class="cuadro luna"><img src= "img/luna.png" alt="Gato"></div>
+				
+				<div class="cuadro vacio"></div>
+				<div class="cuadro pancho"><img src= "img/Pancho.png" alt="Ratón"></div>
+				<div class="cuadro vacio"></div>
+
+				<div class="cuadro canela"><img src= "img/canela.png" alt="Paloma"></div>
+				<div class="cuadro vacio"></div>
+				<div class="cuadro aguita"><img src= "img/Aguita.png" alt="Tingua"></div>
+				
+			  </div>
+
+				<button id="entrar-btn"><span>ENTRAR</span></button>
+
+	  </section>
+    </div>
+	
+  <div id="Guardas">
+    <img src="img/Guardas.jpg" width="1875" height="1251" alt=""/> 
+	<button id="flecha-btn">→</button>
+	</div>
+	
+	  <section id="Capitulos">
+  <h1 class="titulo-capitulos">CAPÍTULOS</h1>
+  <img src="img/Inicio.jpg" class="fondo">
+
+  <div class="contenido">
+    <div class="texto">
+      <h1>¡HOLA!</h1>
+      <p>Soy <strong>Pancho</strong> la rata. Algunos me ven y se asustan, pero yo también soy parte de esta ciudad.</p>
+      <p>Hoy te presentaré a mis amigos: una paloma, un perro, una gata y una tingua. Cada uno tiene una historia para contarte.</p>
+    </div>
+
+    <div class="personaje">
+      <img src="img/Pancho.png" width="886" height="1132" alt=""/> </div>
+
+    <div class="amigos">
+      <h2>¿Quieres conocerlos?</h2>
+      <div class="grid-amigos">
+        <div class="amigo"><img src="img/luna.png" alt="Luna la gata"><p>LUNA</p></div>
+        <div class="amigo"><img src= "img/Aguita.png" alt="Agüita la paloma"><p>AGÜITA</p></div>
+        <div class="amigo"><img src="img/canela.png" alt="Canela la tingua"><p>CANELA</p></div>
+        <div class="amigo"><img src="img/tinto.png" alt="Tinto el perro"><p>TINTO</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+</div>
+	
+<script>
+  document.getElementById('entrar-btn').addEventListener('click', function() {
+    document.querySelector('#Guardas').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('flecha-btn').addEventListener('click', function() {
+    document.querySelector('#Capitulos').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+	
+</body>
+</html>
