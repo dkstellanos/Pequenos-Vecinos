@@ -46,7 +46,7 @@ html {
 }
 #logo {
     position: absolute;
-    top: 50%;
+    top: 8vh;
     left: 4vw;
     transform: translateY(-50%);
     width: 100px;
@@ -400,4 +400,218 @@ li a img {
     color: #B54325;
     font-family: "Londrina Solid", sans-serif;
     font-size: 13pt;
+}
+
+@media (max-width: 768px) {
+
+  #contenedor {
+    flex-direction: column;
+    width: 100vw;
+    height: 300vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    backdrop-filter: blur(6px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  nav ul li a::after {
+    display: none; 
+  }
+
+  li a img {
+    height: 28px;
+  }
+
+  #portada {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px; 
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #logo {
+    position: fixed;
+    top: 38px;
+    left: 10px;
+    height: 70px;
+    z-index: 150;
+    width: 80px;
+  }
+
+  #Titulo {
+    text-align: center;
+  }
+
+  #Titulo h1 {
+    font-size: 35pt;
+  }
+
+  #Titulo h2 {
+    font-size: 30pt;
+  }
+
+  #Personajes {
+    position: relative;
+    top: 30px;
+    width: 100vw;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #Personajes .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    margin-left: 0;
+  }
+
+  .cuadro {
+    width: 130px;
+    height: 110px;
+  }
+
+  .cuadro img {
+    width: 85%;
+  }
+
+  .cuadro.pancho img,
+  .cuadro.canela img,
+  .cuadro.aguita img,
+  .cuadro.tinto img,
+  .cuadro.luna img {
+    padding-top: 20px;
+  }
+
+  #entrar-btn {
+    position: relative;
+    right: 0;
+    top: auto;
+    transform: none;
+    margin: 30px auto;
+    width: 60vw;
+    height: 8vh;
+  }
+
+  #Guardas, 
+  #Capitulos {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #flecha-btn {
+    right: 5vw;
+    bottom: 8vh;
+    top: auto;
+    font-size: 25pt;
+  }
+
+  #Capitulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .titulo-capitulos {
+    font-size: 38pt;
+    text-align: center;
+	  margin-top: 45px;
+	  padding-left: 0;
+  }
+
+  #Capitulos .contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 5vw;
+    gap: 30px;
+    width: 100%;
+    max-width: 95%;
+  }
+
+  #Capitulos .texto {
+    width: 90%;
+    font-size: 12pt;
+  }
+#Capitulos .texto h1 {
+	padding-top: 110px;
+	font-size: 35pt
+	}
+	#Capitulos .texto p {
+		font-size: 15pt;
+		line-height: 1.3;
+		margin-top: 0;
+	}
+
+  #Capitulos .personaje {
+    width: 50%;
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #Capitulos .personaje img {
+    width: 180px; 
+    height: auto;
+  }
+
+  #Capitulos .amigos {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #Capitulos .amigos h2 {
+    font-size: 22pt;
+    margin-bottom: 15px;
+  }
+
+  #Capitulos .grid-amigos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  #Capitulos .amigo {
+    min-width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+
+}
+
 }
