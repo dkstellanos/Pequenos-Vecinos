@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pequeños Vecinos</title>
+<link href="hoja.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href= "img/Pag. Principal/logo_raton_rojo1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="Inicio">
+
+	<div class="pantalla" id="Portada">
+
+		<video autoplay muted loop id="bg-video">
+			<source src="img/Pag. Principal/video_portada.mp4" type="video/mp4">
+		</video>
+
+		<main id="Titulo">
+			<img src="img/Pag. Principal/Pequenos vecinos.png" alt="Título">
+		</main>
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#Portada" data-text="INICIO"><img src="img/Pag. Principal/icono inicio.png" alt="Inicio"></a></li>
+					<li><a href="#Guardas" data-text="INFORMACIÓN"><img src="img/Pag. Principal/icono informacion.png" alt="Información"></a></li>
+					<li><a href="#Capitulos" data-text="CAPÍTULOS"><img src="img/Pag. Principal/icono contenido.png" class="icono-cap" alt="Capítulos"></a></li>
+			  	</ul>
+			</nav>
+		</header>
+
+		<section id="Personajes">
+			<div class="grid">
+				<div class="cuadro tinto"><img src="img/Pag. Principal/tinto.png" alt="Perro"></div>
+				<div class="cuadro vacio"></div>
+				<div class="cuadro luna"><img src="img/Pag. Principal/luna.png" alt="Gato"></div>
+				<div class="cuadro vacio"></div>
+				<div class="cuadro pancho"><img src="img/Pag. Principal/Pancho.png" alt="Ratón"></div>
+				<div class="cuadro vacio"></div>
+				<div class="cuadro canela"><img src="img/Pag. Principal/Panela.png" alt="Paloma"></div>
+				<div class="cuadro vacio"></div>
+				<div class="cuadro aguita"><img src="img/Pag. Principal/Aguita.png" alt="Tingua"></div>
+			</div>
+
+			<button id="entrar-btn"><span>ENTRAR</span></button>
+
+		</section>
+
+	</div>
+
+	<div class="pantalla" id="Guardas">
+
+		<div class="fondo-guardas"></div>
+
+		<div class="contenedor-guardas">
+
+			<img src="img/Pag. Principal/logo_rojo.png" class="logo-guardas" alt="Chandas Urbanas">
+
+			<div class="texto-guardas">
+
+				<p>© CHANDAS URBANAS 2025<br>UNIVERSIDAD SANTO TOMÁS</p>
+
+				<p><strong>TEXTOS:</strong> CASTELLANOS DANIEL<br>
+				<strong>ILUSTRACIONES:</strong> RAMOS LAURA</p>
+
+				<p><strong>EDITORES:</strong><br>RIVEROS LISBET<br>PAULO PARRA</p>
+
+				<p class="legal">
+				Reservados todos los derechos.<br>
+				Se prohíbe la reproducción total o parcial de esta obra,<br>
+				por cualquier medio, sin la autorización expresa del titular.
+				</p>
+
+			</div>
+
+		</div>
+
+		<button id="flecha-btn">→</button>
+
+	</div>
+
+	<div class="pantalla" id="Capitulos">
+
+		<div class="contenedor-capitulos">
+
+			<h1 class="titulo-capitulos">CAPÍTULOS</h1>
+
+			<img src="img/Pag. Principal/Inicio.jpg" class="fondo" alt="Fondo capítulos">
+
+			<div class="contenido">
+
+				<div class="texto">
+					<h1>¡HOLA!</h1>
+					<p>Soy <strong>PANCHO</strong> la rata. Algunos me ven y se asustan, pero yo también soy parte de esta ciudad.</p>
+					<p>Hoy te presentaré a mis amigos: una paloma, un perro, una gata y una tingua. Cada uno tiene una historia para contarte.</p>
+				</div>
+
+				<div class="personaje">
+					<a href="pancho.html">
+						<img src="img/Pag. Principal/Pancho.png" alt="Pancho" class="img-pancho">
+					</a>
+				</div>
+
+			<div class="amigos">
+    <h2>¿QUIERES CONOCERLOS?</h2>
+
+    <div class="grid-amigos">
+
+        <a href="pronto.html" class="amigo luna-amigo">
+            <div class="img-box"><img src="img/Pag. Principal/luna.png" alt="Luna"></div>
+            <p>LUNA</p>
+        </a>
+
+        <a href="pronto.html" class="amigo aguita-amigo">
+            <div class="img-box"><img src="img/Pag. Principal/Aguita.png" alt="Agüita"></div>
+            <p>AGÜITA</p>
+        </a>
+
+        <a href="pronto.html" class="amigo panela-amigo">
+            <div class="img-box"><img src="img/Pag. Principal/Panela.png" alt="Panela"></div>
+            <p>PANELA</p>
+        </a>
+
+        <a href="pronto.html" class="amigo tinto-amigo">
+            <div class="img-box"><img src="img/Pag. Principal/tinto.png" alt="Tinto"></div>
+            <p>TINTO</p>
+        </a>
+    </div>
+</div>
+
+				
+					</div>
+<p class="instruccion-capitulos">
+				DA CLICK EN CADA PERSONAJE PARA VER SU HISTORIA
+			</p>
+				</div>
+	</div>
+			
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
